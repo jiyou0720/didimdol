@@ -1,71 +1,58 @@
 #include <stdio.h>
 int main() {
-	printf("2025243175박지유\n");
-	int i, j;
+//https://codeup.kr/problem.php?id=1019
+	int y, m, d;
+
+	scanf("%d.%d.%d", &y, &m, &d);
+	printf("%04d.%02d.%02d", y, m, d);
+
+//https://codeup.kr/problem.php?id=1014
+	char x, y;
+	scanf("%c %c", &x, &y);
+	printf("%c %c", y, x);
+
+//https://codeup.kr/problem.php?id=1020
+	int num1, num2;
+
+	scanf("%d-%d", &num1, &num2);
+	printf("%06d%07d", num1, num2);
+
+//https://codeup.kr/problem.php?id=1023
+	int a, b;
+	scanf("%d.%d", &a, &b);
+	printf("%d\n%d", a, b);
+
+//http://codeup.kr/problem.php?id=1053
+	int a;
+
+	scanf("%d", &a);
+	printf("%d", !a);
+
+//https://codeup.kr/problem.php?id=1066
+	int q, w, e;
 
 
-	/*for (i = 0; i <= 9; i++) {
-		printf("==%d단 시작==\n", i);
-		for(j = 1;j <= 9; j++){
+	int arr[3];
 
-			printf("%d * %d = %2d\n", i, j, i * j);
 
+	scanf("%d %d %d", &arr[0], &arr[1], &arr[2]);
+
+	for (int i = 0; i < 3; i++) {
+		if (arr[i] % 2 == 0) {
+			printf("even\n");
 		}
-		printf("==%d단 끝==\n", i);
-		printf("\n");
-	}*/
-
-
-	int num;
-	printf("별 몇개?\n");
-	scanf_s("%d", &num);
-	for (i = 1; i <= num; i++) {
-		for (j = 1; j <= i; j++) {
-			printf("*");
+		else {
+			printf("odd\n");
 		}
-		printf("\n");
-	}
-	printf("\n");
-
-	for (i = num; i >= 1; i--) {
-		for (j = 1; j <= i; j++) {
-			printf("*");
-		}
-		printf("\n");
-	}
-
-	for (i = 1; i <= num; i++) {
-		for (j = num; j > i; j--) {
-			printf(" ");
-		}
-		for (j = 1; j <= i; j++) {
-			printf("*");
-		}
-		printf("\n");
-	}
-
-
-	printf("\n");
-
-	for (i = num; i >= 1; i--) {
-		for (j = num; j > i; j--) {
-			printf(" ");
-		}
-		for (j = 1; j <= i; j++) {
-			printf("*");
-		}
-		printf("\n");
 	}
 
-	/*for (int i = 0; i <= 10; i++)
-	{
-		for (int j = 0; j <= i; j++)
-		{
-			printf("*");
-		}
-		printf("\n");
-	}*/
+//https://codeup.kr/problem.php?id=1079
+	char a;
 
 
-	return 0;
+	while (a != 'q') {
+		scanf("%c", &a);
+		printf("%c", a);
+	}
+
 }
